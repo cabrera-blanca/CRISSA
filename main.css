@@ -133,7 +133,7 @@ nav{
 }
 
 .nav-mod{
-    height: 6em;
+    height: 5em;
     background: #2a292965;
     box-shadow: 0 4px 30px #000000a8;
     backdrop-filter: blur(7px);
@@ -153,7 +153,7 @@ nav ul li a {
     color: #fff;
     text-decoration: none;
     font-weight: 500;
-    font-size: 45px;  
+    font-size: 2em;  
 }
 
 nav ul li a:hover {
@@ -192,6 +192,7 @@ nav ul li a:hover {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+    margin: auto;
     flex-direction: column;
     margin: auto;
     color: #fff;
@@ -200,6 +201,12 @@ nav ul li a:hover {
 #back{
     width: 50%;
     height: 70%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    margin: auto;
     padding: 20px;
     border-radius: 16px;
     background: rgba(45, 43, 43, 0.15);
@@ -210,17 +217,15 @@ nav ul li a:hover {
 }
 
 .info h2{
-    margin: 20px auto;
+    width: 100%;
     font-family: 'Koulen', sans-serif;
-    font-size: 70px;
+    font-size: 3vw;
 }
 
 .parrafo{
     max-width: 70%;
-    display: flex;
-    text-align: center;
-    margin: 30px auto;
-    font-size: 35px;
+    height: max-content;
+    font-size: 1.8vw;
     font-family: 'Josefin Sans', sans-serif;
 
 }
@@ -236,15 +241,15 @@ nav ul li a:hover {
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    color: #fff;    
+    color: #fff;
 }
 
 .beats-cont h2{
     width: 100%;
     text-align: center;
-    margin-bottom: 10px;
+    margin-top: 1em;
     font-family: 'Koulen', sans-serif;
-    font-size: 80px;
+    font-size:4em;
 }
 
 .beats-cont .beats{
@@ -278,29 +283,30 @@ nav ul li a:hover {
 
 .tracks-cont .titulo{
     width: 100%;
-    margin-top: 20px;
+    margin-top: 3em;
 }
 
 .tracks-cont .titulo h2{
     text-align: center;
     font-family: 'Koulen', sans-serif;
-    font-size: 80px;
+    font-size: 4em;
 }
 
 
 .tracks-cont .titulo p{
     text-align: center;
-    font-size: 35px;
+    font-size: 1.5em;
     font-family: 'Josefin Sans', sans-serif;
 }
 
 
 .tracks-cont .tracks{
-    justify-content: space-evenly;
+    justify-content: space-between;
+    justify-content: center;
+    align-content: center;
     width:100%;
     padding: 10px;
     height: 600px;
-    font-size: 35px;
     display: flex;
     flex-wrap: wrap;
 }
@@ -309,13 +315,14 @@ nav ul li a:hover {
 
 .licencias-cont{
     width: 100%;
-    height: 100vh;
+    height: fit-content;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     text-align: center;
-    padding: 20px;
+    margin : 1em auto;
+    padding: 1em;
     flex-wrap: wrap;
     color: #fff; 
 }
@@ -323,9 +330,12 @@ nav ul li a:hover {
 
 .titulo-lic{
     width: 100%;
-    font-size: 60px;
-    margin-top: 30px;
+    font-size: 2.7em;
     font-family: 'Koulen', sans-serif;
+}
+
+.titulo-lic h2{
+    margin-top: 1em;
 }
 
 .licencias-box{
@@ -334,16 +344,15 @@ nav ul li a:hover {
     align-items: center;
     flex-wrap: wrap;
     width: 100%;
-    height: 700px;
-    margin-bottom: 20px;
+    gap: 3em;
 }
 
 .tipos{
-    width: 500px;
-    height: 650px;
+    width: max-content;
+    height: min-content;
+    justify-content: space-between;
     align-self: baseline;
-    margin: 10px 20px;
-    padding: 10px;
+    padding: 1em;
     text-align: center;
     font-family: 'Josefin Sans', sans-serif;
     background: rgba(139, 91, 232, 0.23);
@@ -366,10 +375,10 @@ nav ul li a:hover {
 }  
 
 #exclusivo .bottom{
-    height: 100px;
+    height: 3em;
 }
 #exclusivo .top{
-    height: 4rem;
+    height: 4em;
 }
 
 .licencias-cont a {
@@ -378,7 +387,7 @@ nav ul li a:hover {
 }
 
 #esclusivo .boton-licencia{
-    margin-top: 30px;
+    margin-top: 3em;
 }
 
 #exclusivo p{
@@ -428,10 +437,10 @@ nav ul li a:hover {
 
 .tipos .bottom ul{
     list-style: none;
-    font-size: 25px;
+    font-size: 1.2em;
     font-weight: lighter;
     word-spacing: 1mm;
-    margin: 20px 0px;
+    margin: 1em 0;
 }
 
 .bottom ul li{
@@ -461,6 +470,7 @@ footer{
     font-family: 'Koulen', sans-serif;
     width: 100%;
     height: 300px;
+    bottom: 0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -524,7 +534,139 @@ footer{
 }
 
 /*MEDIAQ*/
-
-@media (max-width: 1200) {
+/*medium desk*/
+@media screen  and (max-width:1367px) {
+    /*INFO*/
     
+    .info h2{
+        margin: 0 auto;
+        font-size: 50px;
+    }
+
+
+    .parrafo{
+        width: fit-content;
+        font-size: 27px;
+    }
+
+    /*BEATS*/
+
+    .beats-cont{
+        height: 100vh;
+    }
+
+    .beats-cont h2{
+        margin-top: 1.5em;
+    }
+
+    .beats iframe{
+        width: 30%;
+        height: 40%
+    }
+     /*TRACKS*/
+
+    .tracks-cont .titulo{
+        margin-top: 7%;
+    }
+
+    .tracks-cont .titulo h2{
+        font-size: 60px;
+    }
+
+    /*LICENCES*/
+
+    .licencias-cont{
+        height:100vh;
+        margin-bottom: 30px; 
+    }
+
+    .tipos{
+        text-align: center;
+        width: 400px;
+        height: min-content;
+    }
+
+    .tipos .bottom {
+        width: 350px;  
+        height: 30%;
+    }
+
+    .tipos .bottom ul{
+        font-size: 20px;
+    }
+
+    .titulo-lic{
+        font-size: 4px;
+    }
+    .titulo-lic h2{
+        margin-top: 25px;
+    }
+
 }
+
+
+/*medium desk*/
+@media screen  and (max-width:1440px) and(min-width:1368px) {
+    /*INFO*/
+
+    #back{
+        width: 100%;
+        height: 70%;
+    }
+    .parrafo{
+        max-width: 50%;
+    }
+
+    /*BEATS*/
+
+    .beats-cont h2{
+        margin-top: 1.5em;
+    }
+
+    .beats iframe{
+        width: 30%;
+        height: 40%
+    }
+    /*TRACKS*/
+
+    .tracks-cont .titulo{
+        margin-top: 5%;
+    }
+
+    .tracks-cont .titulo h2{
+        font-size: 70px;
+    }
+
+    /*LICENCES*/
+
+    .licencias-cont{
+        height: fit-content 
+    }
+    
+    .tipos{
+        text-align: center;
+        width: 400px;
+    }
+    
+    .tipos .bottom {
+        width: 350px;  
+        height: 60%;
+    }
+
+    .tipos .bottom ul{
+        font-size: 22px;
+    }
+    
+    .titulo-lic{
+        font-size: 50px;
+    }
+    .titulo-lic h2{
+        margin-top: 25px;
+    }
+
+
+
+
+}
+
+
