@@ -1,4 +1,4 @@
-
+//Scroll Up
 document.getElementById("up").addEventListener("click",scrollUp);
 
 function scrollUp(){
@@ -8,7 +8,6 @@ function scrollUp(){
     window.scrollTo (0,0);
   }
 }
-
 buttonUp = document.getElementById("up");
 window.onscroll = function(){
   scrollnav = document.documentElement.scrollTop;
@@ -30,3 +29,22 @@ window.onscroll = function(){
   }
 }
 
+//Menu barra lateral
+
+document.getElementById('barras').addEventListener("click",mostrarMenu);
+document.getElementById('back-menu').addEventListener("click",ocultarMenu)
+
+var nav =document.getElementById('header');
+var backgroundMenu =document.getElementById('back-menu');
+
+
+function mostrarMenu(){
+nav.style.right = "0px";
+backgroundMenu.style.display ="block";
+}
+
+function ocultarMenu(){
+  nav.style.right = "-250px";
+  backgroundMenu.style.display ="none";
+  
+}
